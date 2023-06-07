@@ -1,6 +1,6 @@
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+/*------------------------------------------------------*\
+                   CUSTOM PROPERTY
+\*------------------------------------------------------*/
 :root {
   /* ========== Common Colors ========== */
   --primary: #b5a1e5;
@@ -70,4 +70,44 @@
   --radius-circle: 50%;
   /* ================= Transition ===============*/
   --transition-short: 100ms ease;
+}
+
+/*--------------------------------------------------------*\
+                           RESET
+\*--------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
 }
