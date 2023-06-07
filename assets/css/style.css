@@ -144,7 +144,6 @@ body {
   color: var(--on-background);
   font-size: var(--body-3);
   overflow: hidden;
-  height: 200vh;
 }
 
 :focus-visible {
@@ -154,4 +153,14 @@ body {
 
 ::selection {
   border-color: var(--white-alpha-8);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; /* for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white-alpha-8);
+  border-radius: var(--radius-pill);
 }
