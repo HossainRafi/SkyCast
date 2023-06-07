@@ -62,4 +62,12 @@
   /* =================== Shadow =============== */
   --shadow-1: 0px 1px 3px hsla(0, 0%, 0%, 0.5);
   --shadow-2: 0px 3px 6px hsla(0, 0%, 0%, 0.4);
+
+  /* ============== Border Radius ============= */
+  --radius-28: 28px;
+  --radius-16: 16px;
+  --radius-pill: 500px;
+  --radius-circle: 50%;
+  /* ================= Transition ===============*/
+  --transition-short: 100ms ease;
 }
