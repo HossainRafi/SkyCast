@@ -55,7 +55,11 @@
   --label-1: 1.4rem;
   --label-2: 1.2rem;
 
-  /* =============== Font Weight ============= */
+  /* =============== Font Weight ============== */
   --weight-regular: 400;
   --weight-semiBold: 600;
+
+  /* =================== Shadow =============== */
+  --shadow-1: 0px 1px 3px hsla(0, 0%, 0%, 0.5);
+  --shadow-2: 0px 3px 6px hsla(0, 0%, 0%, 0.4);
 }
