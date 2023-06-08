@@ -319,4 +319,7 @@ body {
   color: var(--on-surface);
   clip-path: circle(4% at calc(100% - 102%) 5%);
   opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+  transition: clip-path 500ms ease;
 }
