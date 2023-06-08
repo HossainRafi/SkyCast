@@ -19,11 +19,42 @@
     <title>SkyCast</title>
   </head>
   <body>
+    <!-----------------------------------------------------------
+                             HEADER
+     ----------------------------------------------------------->
     <header class="header">
       <div class="container">
+        <!-- --------------- Logo ------------------ -->
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="364" height="58" alt="" />
+          <img
+            src="./assets/images/logo.png"
+            width="364"
+            height="58"
+            alt="logo"
+          />
         </a>
+
+        <!-- ----------------- Search Section ------------- -->
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search city..."
+              autocomplete="off"
+              class="search-field"
+              data-search-field
+            />
+            <span class="m-icon">search</span>
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
   </body>
