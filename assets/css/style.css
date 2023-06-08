@@ -251,3 +251,16 @@ body {
     clip-path: circle(100% at 50% 50%);
   }
 }
+
+.btn-primary {
+  border-color: var(--primary);
+  color: var(--on-primary);
+  height: 48px;
+  line-height: 48px;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 16px;
+  border-radius: var(--radius-pill);
+}
