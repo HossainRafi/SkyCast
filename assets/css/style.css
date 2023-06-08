@@ -282,7 +282,6 @@ body {
 /*------------------------------------------------------*\
                    HEADER DESIGN
 \*------------------------------------------------------*/
-.search-view,
 .header .btn-primary .span {
   display: none;
 }
@@ -291,11 +290,33 @@ body {
   width: 150px;
 }
 
-.header .container, .header-actions{
+.header .container,
+.header-actions {
   display: flex;
   align-items: center;
 }
 
-.header .container{justify-content: space-between;}
+.header .container {
+  justify-content: space-between;
+}
 
-.header-actions{gap: 16px;}
+.header-actions {
+  gap: 16px;
+}
+
+.header .btn-primary {
+  padding-inline: 12px;
+}
+
+.search-view{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  clip-path: circle(4% at calc(100% - 102%) 5%);
+  opacity: 0;
+}
