@@ -308,7 +308,7 @@ body {
   padding-inline: 12px;
 }
 
-.search-view{
+.search-view {
   position: fixed;
   top: 0;
   left: 0;
@@ -322,4 +322,14 @@ body {
   visibility: hidden;
   z-index: 4;
   transition: clip-path 500ms ease;
+}
+
+.search-view.active {
+  opacity: 1;
+  visibility: visible;
+  clip-path: calc(130% at 73% 5%);
+}
+.search-wrapper {
+  position: relative;
+  border-block-end: 1px solid var(--outline);
 }
