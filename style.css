@@ -93,3 +93,27 @@ input::placeholder {
   font-size: 14px;
   margin: 0.5rem;
 }
+
+.weather__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.weather__card {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.weather__card i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.weather__card p {
+  font-size: 14px;
+}
