@@ -253,7 +253,7 @@ body {
 }
 
 .btn-primary {
-  border-color: var(--primary);
+  background-color: var(--primary);
   color: var(--on-primary);
   height: 48px;
   line-height: 48px;
