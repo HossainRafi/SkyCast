@@ -75,3 +75,21 @@ input::placeholder {
   padding: 0.5rem 1rem;
   border-radius: 30px;
 }
+
+.weather__icon img {
+  width: 100px;
+}
+
+.weather__temperature {
+  font-size: 1.75rem;
+}
+
+.weather__minmax {
+  display: flex;
+  justify-content: center;
+}
+
+.weather__minmax p {
+  font-size: 14px;
+  margin: 0.5rem;
+}
