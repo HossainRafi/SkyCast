@@ -2,7 +2,7 @@
 let currCity = "Dhaka";
 let units = "metric";
 
-// Selectors
+// Selector variables
 let city = document.querySelector(".weather__city");
 let datetime = document.querySelector(".weather__datetime");
 let weather__forecast = document.querySelector(".weather__forecast");
@@ -14,9 +14,17 @@ let weather__humidity = document.querySelector(".weather__humidity");
 let weather__wind = document.querySelector(".weather__wind");
 let weather__pressure = document.querySelector(".weather__pressure");
 
+// Search weather details
+document.querySelector(".weather__search").addEventListener("submit", (e) => {
+  let search = document.querySelector(".weather__searchform");
+  e.preventDefault();
+  currCity = search.value;
+  getWeather();
+});
+
 // Convert date & time
 function convertTimeStamp(timestamp, timezone) {
-  const convertTimezone = timezone / 3600; // convert seconds to hours
+  const convertTimezone = timezone / 3600;
   const date = new Date(timestamp * 1000);
   const options = {
     weekday: "long",
