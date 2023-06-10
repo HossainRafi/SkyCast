@@ -14,6 +14,12 @@ let weather__humidity = document.querySelector(".weather__humidity");
 let weather__wind = document.querySelector(".weather__wind");
 let weather__pressure = document.querySelector(".weather__pressure");
 
+// Convert country code to name
+function convertCountryCode(country) {
+  let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
+  return regionNames.of(country);
+}
+
 // Get weather data
 function getWeather() {
   const API_KEY = "56d65ef6ff2d2e6bfc29f01b9a112671";
