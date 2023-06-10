@@ -57,6 +57,9 @@ function getWeather() {
       weather__minmax.innerHTML = `<p>Min: ${data.main.temp_min.toFixed()}&#176</p><p>Max: ${data.main.temp_max.toFixed()}&#176</p>`;
       weather__realfeel.innerHTML = `${data.main.feels_like.toFixed()}&#176`;
       weather__humidity.innerHTML = `${data.main.humidity}%`;
+      weather__wind.innerHTML = `${data.wind.speed} ${
+        units === "imperial" ? "mph" : "m/s"
+      }`;
     });
 }
 
