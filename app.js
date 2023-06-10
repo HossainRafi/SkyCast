@@ -38,9 +38,7 @@ document
   .querySelector(".weather_unit_farenheit")
   .addEventListener("click", () => {
     if (units !== "imperial") {
-      // change to imperial
       units = "imperial";
-      // get weather forecast
       getWeather();
     }
   });
@@ -79,7 +77,6 @@ function getWeather() {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`;
       datetime.innerHTML = convertTimeStamp(data.dt, data.timezone);
       weather__forecast.innerHTML = `<p>${data.weather[0].main}`;
