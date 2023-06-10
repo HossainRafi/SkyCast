@@ -13,6 +13,8 @@ let weather__realfeel = document.querySelector(".weather__realfeel");
 let weather__humidity = document.querySelector(".weather__humidity");
 let weather__wind = document.querySelector(".weather__wind");
 let weather__pressure = document.querySelector(".weather__pressure");
+let celcius = document.querySelector(".weather_unit_celsius");
+let fahrenheit = document.querySelector(".weather_unit_farenheit");
 
 // Search weather details
 document.querySelector(".weather__search").addEventListener("submit", (e) => {
@@ -24,24 +26,24 @@ document.querySelector(".weather__search").addEventListener("submit", (e) => {
 });
 
 // Convert unit to celsius
-document
-  .querySelector(".weather_unit_celsius")
-  .addEventListener("click", () => {
-    if (units !== "metric") {
-      units = "metric";
-      getWeather();
-    }
-  });
+celcius.addEventListener("click", () => {
+  celcius.style.color = "red";
+  fahrenheit.style.color = "white";
+  if (units !== "metric") {
+    units = "metric";
+    getWeather();
+  }
+});
 
 // Convert unit to fahrenheit
-document
-  .querySelector(".weather_unit_farenheit")
-  .addEventListener("click", () => {
-    if (units !== "imperial") {
-      units = "imperial";
-      getWeather();
-    }
-  });
+fahrenheit.addEventListener("click", () => {
+  fahrenheit.style.color = "red";
+  celcius.style.color = "white";
+  if (units !== "imperial") {
+    units = "imperial";
+    getWeather();
+  }
+});
 
 // Convert date & time
 function convertTimeStamp(timestamp, timezone) {

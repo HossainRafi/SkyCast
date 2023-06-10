@@ -55,6 +55,10 @@ input::placeholder {
   cursor: pointer;
 }
 
+.weather_unit_celsius{
+  color: red;
+}
+
 .weather__units span:first-child {
   margin-right: 0.5rem;
 }
