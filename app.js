@@ -51,6 +51,9 @@ function getWeather() {
       console.log(data);
       city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`;
       datetime.innerHTML = convertTimeStamp(data.dt, data.timezone);
+      weather__forecast.innerHTML = `<p>${data.weather[0].main}`;
+      weather__temperature.innerHTML = `${data.main.temp.toFixed()}&#176`;
+      weather__icon.innerHTML = `   <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" />`;
     });
 }
 
