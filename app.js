@@ -20,6 +20,7 @@ document.querySelector(".weather__search").addEventListener("submit", (e) => {
   e.preventDefault();
   currCity = search.value;
   getWeather();
+  search.value = "";
 });
 
 // Convert date & time
