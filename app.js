@@ -23,7 +23,6 @@ document.querySelector(".weather__search").addEventListener("submit", (e) => {
   search.value = "";
 });
 
-
 // Convert unit to celsius
 document
   .querySelector(".weather_unit_celsius")
@@ -34,8 +33,17 @@ document
     }
   });
 
-
-
+// Convert unit to fahrenheit
+document
+  .querySelector(".weather_unit_farenheit")
+  .addEventListener("click", () => {
+    if (units !== "imperial") {
+      // change to imperial
+      units = "imperial";
+      // get weather forecast
+      getWeather();
+    }
+  });
 
 // Convert date & time
 function convertTimeStamp(timestamp, timezone) {
