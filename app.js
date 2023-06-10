@@ -60,6 +60,7 @@ function getWeather() {
       weather__wind.innerHTML = `${data.wind.speed} ${
         units === "imperial" ? "mph" : "m/s"
       }`;
+      weather__pressure.innerHTML = `${data.main.pressure} hPa`;
     });
 }
 
