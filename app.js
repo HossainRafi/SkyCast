@@ -23,6 +23,20 @@ document.querySelector(".weather__search").addEventListener("submit", (e) => {
   search.value = "";
 });
 
+
+// Convert unit to celsius
+document
+  .querySelector(".weather_unit_celsius")
+  .addEventListener("click", () => {
+    if (units !== "metric") {
+      units = "metric";
+      getWeather();
+    }
+  });
+
+
+
+
 // Convert date & time
 function convertTimeStamp(timestamp, timezone) {
   const convertTimezone = timezone / 3600;
